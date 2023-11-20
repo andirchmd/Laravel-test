@@ -26,7 +26,7 @@
             <p class="text-gray-600 text-sm">Don't have an account? <a href="{{ route('register') }}" class="text-gray-800 hover:underline">Register here</a></p>
         </div>
         <div class="mt-2 text-center">
-            <p class="text-gray-600 text-sm">Login as admin? <a href="{{ route('login') }}" class="text-gray-800 hover:underline">Click Here</a></p>
+            <p class="text-gray-600 text-sm">Go back to Homescreen? <a href="{{ route('home') }}" class="text-gray-800 hover:underline">Click Here</a></p>
         </div>
     </div>
 </div>

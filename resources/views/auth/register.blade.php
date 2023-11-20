@@ -26,13 +26,19 @@
 
                 <div class="mb-4">
                     <label for="name" class="block text-sm font-medium text-gray-600">Name</label>
-                    <input id="name" type="text" name="name" placeholder="name" required autofocus
+                    <input id="name" type="text" name="name" placeholder="name..." required autofocus
                         class="mt-1 p-2 w-full border rounded-md">
                 </div>
 
                 <div class="mb-4">
                     <label for="username" class="block text-sm font-medium text-gray-600">Username</label>
-                    <input id="username" type="text" name="username" placeholder="username" required autofocus
+                    <input id="username" type="text" name="username" placeholder="username..." required autofocus
+                        class="mt-1 p-2 w-full border rounded-md">
+                </div>
+
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-600">Email</label>
+                    <input id="email" type="email" name="email" placeholder="email@example.com" required autofocus
                         class="mt-1 p-2 w-full border rounded-md">
                 </div>
 

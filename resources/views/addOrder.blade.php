@@ -13,6 +13,7 @@
                     <strong class="font-bold">Success!</strong>
                     <span class="block sm:inline">{{ session('success') }}</span>
                 </div>
+                <a href="/"><button type="submit" class="w-full p-2 text-white rounded-md hover:bg-opacity-70 mb-2" style="background-color: #1D2022;">Kembali</button></a>
             @endif
 
             @if (session('error'))
@@ -21,17 +22,12 @@
                     <span class="block sm:inline">{{ session('error') }}</span>
                 </div>
             @endif
-            <form method="POST" action="{{ route('admin.order.save') }}" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('user.order.save') }}" enctype="multipart/form-data">
                 @csrf
 
                 <div class="mb-4">
                     <label for="user_id" class="block text-sm font-medium text-gray-600">User</label>
-                    <select id="user_id" name="user_id" class="mt-1 p-2 w-full border rounded-md">
-                        <option value="" selected disabled>Pilih User</option>
-                        @foreach ($user as $usr)
-                            <option value="{{ $usr->id }}">{{ $usr->name }}</option>
-                        @endforeach
-                    </select>
+                    <input type="text" class="mt-1 p-2 w-full border rounded-md" disabled value="{{ Auth::user()->name }}">
                 </div>
 
                 <div class="mb-4">
@@ -43,6 +39,7 @@
                         <option value="Mobile Legends: Bang-Bang">Mobile Legends: Bang-Bang</option>
                     </select>
                 </div>
+
 
                 <div class="mb-4">
                     <label for="file_name" class="block text-sm font-medium text-gray-600">Upload Gambar Akun</label>

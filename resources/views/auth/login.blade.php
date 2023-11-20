@@ -29,7 +29,7 @@
         </form>
 
         <div class="mt-4 text-center">
-            <p class="text-gray-600 text-sm">Login as user? <a href="{{ route('user.login') }}" class="text-gray-800 hover:underline">Click Here</a></p>
+            <p class="text-gray-600 text-sm">Go back to homescreen? <a href="{{ route('home') }}" class="text-gray-800 hover:underline">Click Here</a></p>
         </div>
     </div>
 </div>
